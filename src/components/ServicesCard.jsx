@@ -6,7 +6,7 @@ const ServicesCard = ({services}) => {
     <>
     {services.map((menu)=>{
       return(<>
-  <div className="rounded-lg shadow-2xl border border-[#8b3eea] m-3 relative max-w-xs overflow-hidden text-center md:w-[30%]">
+  <div className="rounded-lg shadow-2xl border border-[#8b3eea] m-3 relative max-w-xs overflow-hidden text-center md:w-[50%]">
       
           <div className="max-w-xs transition duration-300  ease-in-out hover:scale-110 flex justify-center py-3">
        <Image src={menu.icon} width={200} height={100} alt="breakfast" className="card-image h-[70px] w-[70px] rounded-t-lg"/></div>

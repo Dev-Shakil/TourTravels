@@ -1,13 +1,10 @@
-"use client"
+import Image from 'next/image'
+import React from 'react'
 
-import Management from "@/components/Management"
-import Image from "next/image"
-
-export default function about() {
+const AboutUs = () => {
   return (
-    <>
-    <section className="about-us py-12 flex justify-center items-center flex-col h-[80vh]">
-    <h2 className="text-center py-2 text-2xl font-semibold relative md:text-3xl text-[#8b3eea] lg:text-5xl  after:content-[''] after:absolute after:w-[190px]  after:h-[2px] after:bg-[#8b3eea] md:after:left-[39%] lg:after:left-[35%] xl:after:left-[3%] after:left-[36%]  after:bottom-[0px] ">About Us</h2>
+    <section className="about-us py-12 h-[90vh]">
+    <h2 className="text-center py-2 text-2xl font-semibold relative md:text-3xl text-[#8b3eea] lg:text-5xl  after:content-[''] after:absolute after:w-[190px]  after:h-[2px] after:bg-[#8b3eea] md:after:left-[39%] lg:after:left-[42%] xl:after:left-[44%] after:left-[36%]  after:bottom-[0px] ">About Us</h2>
     <div className="flex gap-x-5 lg:mx-[80px] xl:mx-[180px] xl:ml-[350px] mx-[30px]  flex-wrap py-5 justify-center">
       <div className="md:w-[50%] w-[100%]">
         <h3 className="text-4xl font-semibold py-4">Discover your all the destinations with us</h3>
@@ -28,6 +25,7 @@ export default function about() {
         </div>
         </div>
     </section>
-    <Management/></>
   )
 }
+
+export default AboutUs
